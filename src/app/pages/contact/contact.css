@@ -1,0 +1,122 @@
+:host {
+  display: block;
+}
+
+.contact-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 1.5rem;
+  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.08);
+  padding: 2rem;
+}
+
+.contact-copy {
+  background: linear-gradient(180deg, #eef2ff, #f8fafc);
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.8rem;
+  color: #4f46e5;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.contact-copy h1 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(2rem, 2.8vw, 3rem);
+  color: #0f172a;
+}
+
+.contact-copy p {
+  color: #475569;
+  line-height: 1.7;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: grid;
+  gap: 0.8rem;
+  color: #1f2937;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.45rem;
+  color: #334155;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid #dbe3f0;
+  border-radius: 0.9rem;
+  padding: 0.9rem 1rem;
+  font: inherit;
+  background: #f8fafc;
+  color: #0f172a;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid rgba(79, 70, 229, 0.2);
+  border-color: #818cf8;
+}
+
+.contact-form button,
+.back-link {
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem 1.2rem;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.contact-form button {
+  background: linear-gradient(135deg, #4f46e5, #2563eb);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 12px 20px rgba(79, 70, 229, 0.25);
+}
+
+.contact-form button:hover,
+.back-link:hover {
+  transform: translateY(-1px);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  background: #111827;
+  color: white;
+}
+
+@media (max-width: 760px) {
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+}
